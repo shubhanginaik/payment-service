@@ -19,6 +19,7 @@ public class PaymentServiceApplication {
 
   @PostConstruct
   public void startServiceBusProcessorClient() {
+
     serviceBusProcessorClient.start();
     System.out.println("Service Bus Processor Client started to listen for payment messages.");
   }
