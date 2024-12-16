@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class PaymentService {
+
   public PaymentResponse processPayment(PaymentRequest request) {
     // Simulate payment processing logic
     boolean success = request.getAmount() > 0;
